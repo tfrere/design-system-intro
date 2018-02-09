@@ -1,0 +1,50 @@
+
+@import "reset";
+@import "type";
+@import "core";
+@import "impress";
+
+
+body {
+  background-image: url("images/blueprint.png");
+  background-repeat: repeat;
+  background-size: 200px 200px;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+.substep {
+  opacity: 0;
+  transition: all 100ms ease;
+  transform: translateY(-5px);
+  &.active {
+    opacity: 1;
+    transition: all 200ms ease;
+    transform: translateY(0px);
+  }
+}
+
+
+
+#canvas {
+  position: absolute;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  background-color: #fafafa;
+}
+
+.final.step {
+  a {
+    color: rgba(0,0,0,0.8);
+    text-decoration: underline;
+    text-decoration-color: rgba(0,0,0,0.1);
+  }
+  ul li {
+    font-size: 1.2rem;
+  }
+}
