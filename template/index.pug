@@ -5,118 +5,186 @@ html(lang='en')
     meta(name='viewport', content='width=1024')
     meta(name='apple-mobile-web-app-capable', content='yes')
     title Design systems
-    meta(name='description', content="Design systems")
+    meta(name='description', content='Design systems')
     meta(name='author', content='Ciconia')
     link(href='http://fonts.googleapis.com/css?family=Open+Sans:light,regular,semibold,bold,black,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic', rel='stylesheet')
     link(href='main.css', rel='stylesheet')
     link(rel='shortcut icon', href='images/favicon.png')
     link(rel='apple-touch-icon', href='apple-touch-icon.png')
   body.impress-not-supported
-    .sunburst.-hidden
-      .outer
-        b
-        b
-        b
-        b
-        b
-        b
-        b
-        b
-        b
+    //- .sunburst.-hidden
+    //-   .outer
+    //-     b
+    //-     b
+    //-     b
+    //-     b
+    //-     b
+    //-     b
+    //-     b
+    //-     b
+    //-     b
     #fullscreen
     canvas#canvas
+    .hint
+    .step-count
+      span.step-count__past -
+      span.step-count__present I.
+      span.step-count__future II.
     #impress
-      #title.step(data-x='0', data-y='0', data-scale='3')
-        h1 Design Systems
-      .step(data-x='0', data-y='6000', data-scale='6')
-        h4 <span class="title-label">I. Introduction </span> The industrialisation of design
-      //- .step(data-x='0', data-y='10000', data-scale='6')
-        //- ul.big-list  
-        //-   li.big-item.substep
-        //-     img.big-item-icon(src="images/religion.svg" width="50px")
-        //-     span.big-item-label Religion 
-        //-   li.big-item.substep
-        //-     img.big-item-icon(src="images/etat.svg" width="50px")
-        //-     span.big-item-label State   
-      .step(data-x='0', data-y='14000', data-scale='6')
-        img(src="images/dialog_size.svg")
-      .step(data-x='0', data-y='18000', data-scale='6')
-        ul.big-list  
+      .step(data-anim="title", data-x='0', data-y='0')
+        #designsystem
+          include ../svg/designsystem-strokes.svg
+        //- p Vous connaissez les designs systems ? Les chartes graphiques ? Ok, c'est cool, on va commencer par là
+      .step(data-part='1', data-x='0', data-y='5000')
+        h4
+          span.title-label I. Introduction 
+          |  The industrialisation of design
+      .step(data-x='0', data-y='10000')
+        h4 <span class="title-label">I. Introduction </span> A design story
+      .step(data-x='0', data-y='15000')
+        p début des corporates identities 
+        p guildes en 1500, annuaire des guildes en 1600, invention de l'imprimerie dans ces eaux là
+        ul.big-list
           li.big-item.substep
-            img.big-item-icon(src="images/circle.svg" width="50px")
+            img.big-item-icon(src="svg/religion.svg" width="50px")
+            span.big-item-label Religion 
+          li.big-item.substep
+            img.big-item-icon(src="svg/etat.svg" width="50px")
+            span.big-item-label State
+      .step(data-x='0', data-y='20000')
+        img(src='svg/dialog_size.svg')
+        p.didascali
+          trouver un parallele sympa pour imager un peu le truc
+      .step(data-x='0', data-y='25000')
+        ul.big-list
+          li.big-item.substep
+            img.big-item-icon(src='svg/circle.svg', width='50px')
             span.big-item-label Consistency   
           li.big-item.substep
-            img.big-item-icon(src="images/optimization.svg" width="50px")
+            img.big-item-icon(src='svg/optimization.svg', width='50px')
             span.big-item-label Optimization   
           li.big-item.substep
-            img.big-item-icon(src="images/organization.svg" width="50px")
+            img.big-item-icon(src='svg/organization.svg', width='50px')
             span.big-item-label Organization
-      .step(data-x='0', data-y='25000', data-scale='9')
-        h4 <span class="title-label"> II. Definition</span> What is a design system
-      .step(data-x='0', data-y='30000', data-scale='9')
-        h4 Design Sytem <span class="title-label">\di.zajn ˈsɪs.təm\</span>
-        p UX and UI reference that all the actors are <i>using</i> for design and develop their products and digital services
-      .step(data-x='0', data-y='35000', data-scale='9')
+      .step(data-part='2', data-x='0', data-y='30000')
+        h4
+          span.title-label  II. Definition
+          |  What is a design system
+      .step(data-x='0', data-y='35000')
+        h4
+          | Design Sytem 
+          span.title-label \di.zajn ˈsɪs.təm\
+        p
+          | UX and UI reference that all the actors are using
+          | for design and develop their products and digital services
+      .step(data-part='3', data-x='0', data-y='40000')
+        h4
+          span.title-label III. In production
+          |  The tool
+      .step(data-x='0', data-y='45000')
         ul.big-list
           li.big-item.substep
-            img.big-item-icon(src="images/living.svg" width="50px")
-            span.big-item-label Living
-          li.big-item.substep
-            img.big-item-icon(src="images/agnostic.svg" width="50px")
-            span.big-item-label Agnostic
-          li.big-item.substep
-            img.big-item-icon(src="images/atomic.svg" width="50px")
-            span.big-item-label Atomic
-          li.big-item.substep
-            img.big-item-icon(src="images/universal.svg" width="50px")
-            span.big-item-label Universal
-          li.big-item.substep
-            img.big-item-icon(src="images/accessible.svg" width="50px")
-            span.big-item-label Accessible
-          
-      .step(data-x='0', data-y='45000', data-scale='12')
-        h4 <span class="title-label">III. In production</span> The tool
-      .step(data-x='0', data-y='55000', data-scale='12')
-        ul.big-list
-          li.big-item.substep
-            img.big-item-icon(src="images/bible.svg" width="50px")
+            img.big-item-icon(src='svg/bible.svg', width='50px')
             span.big-item-label The truth     
         ul.big-list
           li.big-item.substep
-            img.big-item-icon(src="images/visual.svg" width="50px")
+            img.big-item-icon(src='svg/visual.svg', width='50px')
             span.big-item-label Visual    
           li.big-item.substep
-            img.big-item-icon(src="images/usage3.svg" width="50px")
+            img.big-item-icon(src='svg/usage3.svg', width='50px')
             span.big-item-label Uses
           li.big-item.substep
-            img.big-item-icon(src="images/layout.svg" width="50px")
+            img.big-item-icon(src='svg/layout.svg', width='50px')
             span.big-item-label Layout    
           li.big-item.substep
-            img.big-item-icon(src="images/voice.svg" width="50px")
+            img.big-item-icon(src='svg/voice.svg', width='50px')
             span.big-item-label Voice & Tones
           li.big-item.substep
-            img.big-item-icon(src="images/modular.svg" width="50px")
+            img.big-item-icon(src='svg/modular.svg', width='50px')
             span.big-item-label Modules     
           li.big-item.substep
-            img.big-item-icon(src="images/resources.svg" width="50px")
+            img.big-item-icon(src='svg/resources.svg', width='50px')
             span.big-item-label Resources    
-      
-      .step(data-x='0', data-y='65000', data-scale='12')
-        img.big-item-icon(src="images/medium.gif" style="width:800px")
-      .step(data-x='0', data-y='75000', data-scale='12')
-        img.big-item-icon(src="images/usage.gif" style="width:800px")
-      .step(data-x='0', data-y='85000', data-scale='12')
-        img.big-item-icon(src="images/layout.gif" style="width:800px")
-      .step(data-x='0', data-y='95000', data-scale='12')
-        img.big-item-icon(src="images/voicesandtones2.gif" style="width:800px")
-      .step(data-x='0', data-y='105000', data-scale='12')
-        img.big-item-icon(src="images/modules.gif" style="width:800px")
-      .step(data-x='0', data-y='115000', data-scale='12')
-        img.big-item-icon(src="images/resources.gif" style="width:800px")
+            p
+              genre conseils d'utilisation pour le "CMS"
+      .step(data-x='0', data-y='50000')
+        span.big-item-label Visual
+        img.big-item-icon(src='images/medium.gif', style='width:800px;')
+      .step(data-x='0', data-y='55000')
+        span.big-item-label Uses ( user story trainline )
+        img.big-item-icon(src='images/usage.gif', style='width:800px;')
+      .step(data-x='0', data-y='60000')
+        span.big-item-label Layout
+        img.big-item-icon(src='images/layout.gif', style='width:800px;')
+      .step(data-x='0', data-y='65000')
+        span.big-item-label Voice and tones
+        img.big-item-icon(src='images/voicesandtones2.gif', style='width:800px;')
+      .step(data-x='0', data-y='70000')
+        span.big-item-label Modules
+        img.big-item-icon(src='images/modules.gif', style='width:800px;')
+      .step(data-x='0', data-y='75000')
+        span.big-item-label Resources
+        img.big-item-icon(src='images/resources.gif', style='width:800px;')
+      .step(data-part='4', data-x='0', data-y='80000')
+        h4
+          span.title-label IV. Caracteristics
+          |  Essentials
+      .step(data-x='0', data-y='85000')
+        ul.big-list
+          li.big-item.substep
+            img.big-item-icon(src='svg/living.svg', width='50px')
+            span.big-item-label Living
+          li.big-item.substep
+            img.big-item-icon(src='svg/agnostic.svg', width='50px')
+            span.big-item-label Agnostic
+          li.big-item.substep
+            img.big-item-icon(src='svg/atomic.svg', width='50px')
+            span.big-item-label Atomic
+          li.big-item.substep
+            img.big-item-icon(src='svg/universal.svg', width='50px')
+            span.big-item-label Universal
+          li.big-item.substep
+            img.big-item-icon(src='svg/accessible.svg', width='50px')
+            span.big-item-label Inclusive
+      .step(data-x='0', data-y='90000')
+        h4
+          span.title-label V. Flexible
+          |  A DSL that fit your needs
+      .step(data-x='0', data-y='95000')
+        h4
+          span.title-label V. sur mesure
+          |  Variations et modeles de gouvernance
+        p.
+          Bon c'est bien joli tout ça mais le but de cette présentation c'est aussi
+          de vous montrer comment, vous dans vos corps de métiers respectifs 
+          vous allez pouvoir interagir avec ça 
+          
+        p.
+          Il y à autant de design systems que d'entreprises,
+          pour que la sauce prenne, il faut adapter votre systeme à la culture de votre entreprise
+          et embrasser ses modeles de gouvernance
+          
+          
+        
+        include ../svg/designsystemspecificity.svg
+        
+      .step(data-x='0', data-y='95000')
+        h4
+          span.title-label V. Example
+          |  The "Perfect" workflow
+        p.
+          montrer un workflow au plus optimal
+          lib sketch possibilités,
+          separer UX et graphism proprement,
+          versioning sur les planches,
+          commentaires à même la planche avec des issues resolvables et systeme qui prévient l'auteur de l'issue par email qu'elle à été résolue
 
-      .step(data-x='0', data-y='125000', data-scale='15')
-        h4 <span class="title-label">IV. Conclusion</span> Luxemburger Wort
-      .step(data-x='0', data-y='135000', data-scale='15')
+      .step(data-x='0', data-y='100000')
+        h4
+          span.title-label IV. Conclusion
+          |  Luxemburger Wort
+
+      .step(data-x='0', data-y='105000')
         ul.big-list
           li.big-item.substep
             span.big-item-number.count-to-0-0 ~50
@@ -133,85 +201,87 @@ html(lang='en')
           li.big-item.substep
             span.big-item-number.count-to-0-4 ~1M
             span.big-item-label Daily unique users
-
-      //- .small.step(data-x='0', data-y='44000', data-scale='3')
-      //-   h4 <span class="title-label">III. Conclusion</span> A wise move
-      .small.step(data-x="0" data-y="145000", data-scale="18")
-        h4 <span class="title-label">V. References and links</span> To go deeper
-      .small.step(data-x="0" data-y="160000", data-scale="18").final
-        h5.substep
-          a(href="#") http://designsystem.tfrere.fr/
+      .step(data-x='0', data-y='110000')
+        h4
+          span.title-label V. References and links
+          |  To go deeper
+      .step.final(data-x='0', data-y='115000')
         ul.big-list.text-left
-          li.big-list-item(style="width:500px;margin-right: 40px").substep
+          li.big-list-item.substep(style='width:500px;margin-right: 40px;')
+            div
+              h6 History
+              //- https://polaris.shopify.com/
+            ul
+              li
+                a(href='http://www.historygraphicdesign.com/prologue-to-graphic-design/the-invention-of-writing') Invention of writing
+              li
+                a(href='https://en.wikipedia.org/wiki/Style_guide') Style guide wikipedia
+              li
+                a(href='https://en.wikipedia.org/wiki/Corporate_identity#Visual_identity_history') Corporate Identity Wikipedia
+              li
+                a(href='https://en.wikipedia.org/wiki/The_Chicago_Manual_of_Style') Chicago manual of style
+          li.big-list-item.substep(style='width:500px;margin-right: 40px;')
             div
               h6 Authors
             ul
               li
-                a(href="http://bradfrost.com/") Brad Frost
+                a(href='http://bradfrost.com/') Brad Frost
               li
-                a(href="http://www.craftui.com/") Alla Kholmatova
+                a(href='http://www.craftui.com/') Alla Kholmatova
               li
-                a(href="http://davegamache.com/") Dave Gamache
-            
-          li.big-list-item(style="width:450px;margin-right: 40px").substep
+                a(href='http://davegamache.com/') Dave Gamache
+          li.big-list-item.substep(style='width:450px;margin-right: 40px;')
             div
               h6 Refs
             ul
               li
-                a(href="http://styleguides.io/") Styleguides
+                a(href='http://styleguides.io/') Styleguides
               li
-                a(href="http://atomicdesign.bradfrost.com/chapter-1/") Atomic design
+                a(href='http://atomicdesign.bradfrost.com/chapter-1/') Atomic design
               li
-                a(href="http://atomicdesign.bradfrost.com/chapter-1/") Design systems
+                a(href='http://atomicdesign.bradfrost.com/chapter-1/') Design systems
               li
-                a(href="https://en.wikipedia.org/wiki/Corporate_identity") Corporate Id
-                
-          li.big-list-item(style="width:250px;margin-right: 40px").substep
+                a(href='https://en.wikipedia.org/wiki/Corporate_identity') Corporate Id
+          li.big-list-item.substep(style='width:250px;margin-right: 40px;')
             div
               h6 DSLs
             ul
               li
-                a(href="https://material.io/guidelines/") Google
+                a(href='https://material.io/guidelines/') Google
               li
-                a(href="https://airbnb.design/the-way-we-build/") AirBnB
+                a(href='https://airbnb.design/the-way-we-build/') AirBnB
               li
-                a(href="http://codeforamerica.clearleft.com/") US GOV
+                a(href='http://codeforamerica.clearleft.com/') US GOV
               li
-                a(href="https://codepen.io/guide/") UK GOV
-          li.big-list-item(style="margin-top:110px;").substep
+                a(href='https://codepen.io/guide/') UK GOV
+          li.big-list-item.substep(style='margin-top:110px;')
             ul
               li
-                a(href="http://carbondesignsystem.com/") IBM
+                a(href='http://carbondesignsystem.com/') IBM
               li
-                a(href="https://www.lightningdesignsystem.com/") Saleforce
+                a(href='https://www.lightningdesignsystem.com/') Saleforce
               li
-                a(href="http://www.audi.com/ci/en/guides/user-interface/introduction.html#") Audi
+                a(href='http://www.audi.com/ci/en/guides/user-interface/introduction.html#') Audi
               li
-                a(href="https://polaris.shopify.com/") Shopify
+                a(href='https://fluent.microsoft.com/') Microsoft
+      .step(data-x='0', data-y='120000')
+        h1.big-title Thanks !
+        h5.substep
+          a(href='#') http://designsystem.tfrere.fr/
 
-      //- .step(data-x='0', data-y='48000', data-scale='3')
-      //-   h1.big-title Merci !
-      //
-        <div id="ing" class="step" data-x="3500" data-y="-850" data-rotate="270" data-scale="6">
-        <p>by <b class="positioning">positioning</b>, <b class="rotating">rotating</b> and <b class="scaling">scaling</b> them on an infinite canvas</p>
-        </div>
-        <div id="imagination" class="step" data-x="6700" data-y="-300" data-scale="6">
-        <p>the only <b>limit</b> is your <b class="imagination">imagination</b></p>
-        </div>
-        <div id="source" class="step" data-x="6300" data-y="2000" data-rotate="20" data-scale="4">
-        <p>want to know more?</p>
-        <q><a href="http://github.com/bartaz/impress.js">use the source</a>, Luke!</q>
-        </div>
-        <div id="one-more-thing" class="step" data-x="6000" data-y="4000" data-scale="2">
-        <p>one more thing...</p>
-        </div>
-      script(src='js/jquery.js')
-      script(src='js/lodash.js')
-      script(src='js/jquery.easing.js')
-      script(src='js/jquery.countto.js')
-      script(src='js/moment.js')
-      script(src='js/impress.js')
-      script(src='js/tweenlite.js')
-      script(src='js/particles2D.js')
-      script(src='js/confetti_cannon.js')
-      script(src='js/main.js')
+      // data-x="3500" data-y="-850" data-rotate="270" data-scale="6"
+      script(src='js/lib/jquery.js')
+      script(src='js/lib/lodash.js')
+      script(src='js/lib/jquery.easing.js')
+      script(src='js/lib/jquery.countto.js')
+      script(src='js/lib/moment.js')
+      script(src='js/lib/impress.js')
+      script(src='js/lib/tweenlite.js')
+      script(src='js/lib/TimelineMax.min.js')
+      script(src='js/lib/TweenMax.min.js')
+      script(src='js/lib/DrawSVGPlugin.min.js')
+      script(src='js/lib/EaselPlugin.min.js')
+      script(src='js/lib/particles2D.js')
+      script(src='js/lib/confetti_cannon.js')
+      script(src='js/toggleFullScreen.js')
+      script(src='js/main-min.js')

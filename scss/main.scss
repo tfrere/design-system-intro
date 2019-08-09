@@ -3,6 +3,7 @@
 @import "type";
 @import "core";
 @import "impress";
+@import "step-count";
 
 
 body {
@@ -26,7 +27,26 @@ body {
   }
 }
 
+#designsystem {
+  path {
+    fill: rgba(0,0,0,0);
+    stroke: rgba(200,0,0,0.8);
+    stroke-width: 20;
+    transition: all 200ms ease;
+  }
+  &.full {
+    path {
+      fill: rgba(0,0,0,0.8);
+      // stroke-width: 0;
+    }
+  }
+}
 
+// .step:first-child svg path {
+//   fill: transparent;
+//   stroke-color: blue;
+//   stroke-size: 20px;
+// }
 
 #canvas {
   position: absolute;

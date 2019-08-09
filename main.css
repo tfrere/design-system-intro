@@ -178,7 +178,7 @@ table {
   right: 25px;
   width: 25px;
   height: 25px;
-  background: url("images/frame-expand.svg");
+  background: url("svg/frame-expand.svg");
   background-size: cover;
   cursor: pointer;
   opacity: 0.5; }
@@ -196,6 +196,7 @@ table {
   top: 0;
   left: 0;
   opacity: 1;
+  z-index: 1;
   transition: opacity 500ms ease; }
 
 .sunburst.-hidden {
@@ -214,7 +215,7 @@ table {
   height: 0;
   border-width: 90px 1500px;
   margin: -180px 0 0 0;
-  border-color: transparent rgba(255, 255, 255, 0.05);
+  border-color: transparent rgba(0, 0, 0, 0.05);
   border-style: solid; }
 
 .sunburst .outer b:nth-child(1) {
@@ -409,6 +410,58 @@ table {
 .slide q strong {
   white-space: nowrap; }
 
+.step-count {
+  position: fixed;
+  width: 120px;
+  height: 40px;
+  position: relative;
+  top: 25px;
+  left: 25px;
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-weight: 900;
+  line-height: 1;
+  color: rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  transition: all 250ms ease;
+  letter-spacing: 5px;
+  overflow: hidden; }
+  .step-count--visible {
+    opacity: 1; }
+
+.step-count__past, .step-count__now, .step-count__future {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 250ms ease; }
+
+.step-count__past {
+  transform: translateY(-40px); }
+
+.step-count__now {
+  transform: translateY(0); }
+
+.step-count__future {
+  transform: translateY(40px); }
+
+.step-count--forward .step-count__past {
+  transform: translateY(0); }
+
+.step-count--forward .step-count__now {
+  transform: translateY(40px); }
+
+.step-count--forward .step-count__future {
+  transform: translateY(80px); }
+
+.step-count--backward .step-count__past {
+  transform: translateY(-80px); }
+
+.step-count--backward .step-count__now {
+  transform: translateY(40px); }
+
+.step-count--backward .step-count__future {
+  transform: translateY(0); }
+
 body {
   background-image: url("images/blueprint.png");
   background-repeat: repeat;
@@ -425,6 +478,15 @@ body {
     opacity: 1;
     transition: all 200ms ease;
     transform: translateY(0px); }
+
+#designsystem path {
+  fill: transparent;
+  stroke: rgba(200, 0, 0, 0.8);
+  stroke-width: 20;
+  transition: all 200ms ease; }
+
+#designsystem.full path {
+  fill: rgba(0, 0, 0, 0.8); }
 
 #canvas {
   position: absolute;

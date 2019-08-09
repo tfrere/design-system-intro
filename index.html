@@ -13,68 +13,102 @@
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
   </head>
   <body class="impress-not-supported">
-    <div class="sunburst -hidden">
-      <div class="outer"><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b></div>
-    </div>
     <div id="fullscreen"></div>
     <canvas id="canvas"></canvas>
+    <div class="hint"></div>
+    <div class="step-count"><span class="step-count__past">-</span><span class="step-count__present">I.</span><span class="step-count__future">II.</span></div>
     <div id="impress">
-      <div class="step" id="title" data-x="0" data-y="0" data-scale="3">
-        <h1>Design Systems</h1>
+      <div class="step" data-anim="title" data-x="0" data-y="0">
+        <div id="designsystem"><svg xmlns="http://www.w3.org/2000/svg" width="800" height="400" viewBox="0 0 2834.646 1417.323"><text y="129.394" x="1018.341" style="line-height:125%" font-weight="400" font-size="141.732" font-family="sans-serif" letter-spacing="0" word-spacing="0"><tspan style="-inkscape-font-specification:'Fira Sans Condensed, Condensed'" y="129.394" x="1018.341" font-stretch="condensed" font-family="Fira Sans Condensed" letter-spacing="35.433">BUILDING</tspan></text><g style="line-height:125%" font-weight="400" font-family="sans-serif" letter-spacing="23.931" word-spacing="0" opacity=".558" fill="none" stroke="#000" stroke-width="3.855"><path d="M37.66 276.305h2769.764M37.66 658.982h2769.764M37.66 432.21h2769.764M37.66 933.319h2769.764M37.66 1323.082h2769.764M37.66 1089.224h2769.764"/><path d="M2393.525 198.475v528m-2016.173-528v528M117.827 860.713v528m2528.137-528v528m-281.898-528v528m-80.543-528v528m-375.864-528v528m-80.543-528v528m-243.49-528v528m-80.542-528v528m-288.985-528v528m-80.543-528v528m-268.474-528v528m-80.542-528v528m-310.61-528v528m-80.542-528v528M787.151 225.322v528m-114.476-528v528m438.508-528v528m-107.389-528v528m485.866-528v528m-121.563-528v528m344.543-528v528m-121.564-528v528m531.362-528v528m-121.563-528v528" opacity=".236"/></g><g style="line-height:125%"><path d="M493.874 283.856q52.213 0 90.712 14.767 38.5 14.24 62.233 54.322 24.26 40.082 24.26 112.863 0 102.314-46.41 143.978-45.884 41.137-126.048 41.137H381.539V283.856h112.335zm-5.801 74.89v216.76h16.877q21.095 0 33.226-10.02 12.657-10.021 18.458-33.754 5.802-23.733 5.802-65.924 0-41.665-6.329-64.87-5.801-23.733-17.931-32.699-12.13-9.493-32.172-9.493h-17.931zm522.242-74.89l-10.548 73.836H893.234v71.198h93.876v71.726h-93.876v75.417h113.917v74.89H786.7V283.856h223.615zm231.87-10.548q40.082 0 70.671 12.658 30.59 12.657 54.85 36.917l-45.357 54.85q-33.226-29.007-68.034-29.007-17.404 0-25.842 7.91-8.438 7.384-8.438 20.042 0 9.493 4.746 15.822 4.747 5.801 16.35 12.13 11.602 5.801 36.39 15.294 35.335 13.712 56.431 29.534 21.096 15.295 31.116 37.445 10.548 22.151 10.548 54.322 0 35.336-17.404 62.76-16.877 27.425-49.048 42.72-32.17 14.766-75.945 14.766-82.273 0-137.122-54.849l51.157-56.431q39.027 34.808 79.11 34.808 20.04 0 29.006-9.493 9.493-9.493 9.493-24.788 0-16.349-10.548-26.37-10.548-10.547-40.082-21.623-58.013-22.15-81.219-49.048-22.678-26.897-22.678-67.506 0-34.28 16.877-59.596 17.404-25.842 47.466-39.554 30.061-13.713 67.506-13.713zm352.182 10.548v367.067h-106.534V283.856h106.534zm285.953-10.548q36.39 0 66.979 13.185 30.589 12.658 53.267 34.28l-50.103 52.74Q1933.06 359.801 1918.82 354q-14.24-6.329-32.171-6.329-34.808 0-51.158 27.425-16.349 27.424-16.349 92.294 0 47.465 4.746 73.308 5.274 25.315 15.295 35.335 10.548 10.02 28.48 10.02 16.349 0 31.643-8.965v-69.616h-30.589l-9.493-71.726h140.815v184.061q-27.425 19.514-62.233 30.589-34.28 10.548-66.98 10.548-83.855 0-122.882-47.993-38.5-47.993-38.5-146.089 0-63.287 21.623-106.533 22.15-43.774 60.65-65.398 39.028-21.623 88.603-21.623zm515.435 377.615h-130.794l-65.924-272.663 1.582 12.657q5.801 39.028 8.966 71.726 3.164 32.699 3.164 72.253v116.027h-91.767V283.856h129.74l67.506 273.718-1.582-10.548q-6.329-41.664-9.493-71.725-3.164-30.062-3.164-70.671V283.856h91.766v367.067zM266.366 932.552q40.083 0 70.671 12.658 30.59 12.657 54.85 36.918l-45.356 54.849q-33.226-29.007-68.034-29.007-17.404 0-25.843 7.91-8.438 7.384-8.438 20.042 0 9.493 4.746 15.822 4.747 5.801 16.35 12.13 11.602 5.801 36.39 15.294 35.335 13.713 56.431 29.535 21.096 15.294 31.117 37.445 10.548 22.15 10.548 54.321 0 35.336-17.405 62.76-16.876 27.425-49.047 42.72-32.171 14.766-75.945 14.766-82.274 0-137.123-54.849l51.157-56.431q39.028 34.808 79.11 34.808 20.04 0 29.006-9.493 9.493-9.493 9.493-24.788 0-16.349-10.547-26.37-10.548-10.547-40.082-21.623-58.014-22.15-81.22-49.047-22.677-26.897-22.677-67.507 0-34.28 16.876-59.596 17.404-25.842 47.466-39.554 30.061-13.713 67.506-13.713zM792.309 943.1l-105.48 231v136.068H580.297v-135.541L474.816 943.1h113.39l46.412 151.363L682.083 943.1H792.31zm212.274-10.548q40.082 0 70.67 12.658 30.59 12.657 54.85 36.918l-45.356 54.849q-33.226-29.007-68.034-29.007-17.404 0-25.843 7.91-8.438 7.384-8.438 20.042 0 9.493 4.747 15.822 4.746 5.801 16.349 12.13 11.603 5.801 36.39 15.294 35.336 13.713 56.431 29.535 21.096 15.294 31.117 37.445 10.548 22.15 10.548 54.321 0 35.336-17.404 62.76-16.877 27.425-49.048 42.72-32.171 14.766-75.945 14.766-82.274 0-137.123-54.849l51.157-56.431q39.028 34.808 79.11 34.808 20.04 0 29.006-9.493 9.494-9.493 9.494-24.788 0-16.349-10.548-26.37-10.548-10.547-40.082-21.623-58.014-22.15-81.22-49.047-22.677-26.897-22.677-67.507 0-34.28 16.876-59.596 17.404-25.842 47.466-39.554 30.062-13.713 67.507-13.713zM1490.97 943.1l-10.548 79.11h-72.253v287.957h-106.534V1022.21h-78.054V943.1h267.39zm326.233 0l-10.548 73.836H1700.12v71.198h93.876v71.726h-93.876v75.417h113.917v74.89h-220.45V943.1h223.615zm469.601 367.068h-102.842l-.527-131.85v-41.136q0-58.014 2.637-106.007l-34.28 241.547h-100.206l-36.918-241.547q5.274 75.945 5.274 129.212v17.932l-1.055 131.849H1917.1l23.206-367.068h130.266l32.699 238.91 29.006-238.91H2263.6l23.205 367.067zm228.203-377.616q40.082 0 70.671 12.658 30.589 12.657 54.85 36.918l-45.357 54.849q-33.226-29.007-68.034-29.007-17.404 0-25.842 7.91-8.439 7.384-8.439 20.042 0 9.493 4.747 15.822 4.747 5.801 16.35 12.13 11.602 5.801 36.39 15.294 35.335 13.713 56.43 29.535 21.097 15.294 31.117 37.445 10.548 22.15 10.548 54.321 0 35.336-17.404 62.76-16.877 27.425-49.048 42.72-32.17 14.766-75.945 14.766-82.273 0-137.122-54.849l51.157-56.431q39.027 34.808 79.11 34.808 20.04 0 29.006-9.493 9.493-9.493 9.493-24.788 0-16.349-10.548-26.37-10.548-10.547-40.082-21.623-58.013-22.15-81.219-49.047-22.678-26.897-22.678-67.507 0-34.28 16.877-59.596 17.404-25.842 47.466-39.554 30.061-13.713 67.506-13.713z" style="-inkscape-font-specification:'Fira Sans Condensed, Heavy Condensed';text-align:center" font-weight="900" font-size="527.395" font-family="Fira Sans Condensed" letter-spacing="87.899" word-spacing="0" fill="#fff" stroke="#000" stroke-width="18.716" stroke-linecap="round" stroke-linejoin="round" font-stretch="condensed" text-anchor="middle"/></g><text style="line-height:125%" x="1388.87" y="-1000.197" font-weight="400" font-size="68.071" font-family="sans-serif" letter-spacing="0" word-spacing="0" fill="#fff" stroke="#000" stroke-width="18.716" stroke-linecap="round" stroke-linejoin="round"><tspan x="1432.82" y="-1000.197" style="-inkscape-font-specification:'Fira Sans Condensed, Heavy Condensed';text-align:center" font-weight="900" font-stretch="condensed" font-size="527.395" font-family="Fira Sans Condensed" letter-spacing="87.899" text-anchor="middle">DESIGN</tspan><tspan x="1432.819" y="-340.952" style="-inkscape-font-specification:'Fira Sans Condensed, Heavy Condensed';text-align:center" font-weight="900" font-stretch="condensed" font-size="527.395" font-family="Fira Sans Condensed" letter-spacing="87.899" text-anchor="middle">SYSTEMS</tspan></text></svg></div>
       </div>
-      <div class="step" data-x="0" data-y="6000" data-scale="6">
+      <div class="step" data-part="1" data-x="0" data-y="5000">
         <h4><span class="title-label">I. Introduction </span> The industrialisation of design</h4>
       </div>
-      <div class="step" data-x="0" data-y="14000" data-scale="6"><img src="images/dialog_size.svg"></div>
-      <div class="step" data-x="0" data-y="18000" data-scale="6">
-        <ul class="big-list"> 
-          <li class="big-item substep"><img class="big-item-icon" src="images/circle.svg" width="50px"><span class="big-item-label">Consistency   </span></li>
-          <li class="big-item substep"><img class="big-item-icon" src="images/optimization.svg" width="50px"><span class="big-item-label">Optimization   </span></li>
-          <li class="big-item substep"><img class="big-item-icon" src="images/organization.svg" width="50px"><span class="big-item-label">Organization</span></li>
+      <div class="step" data-x="0" data-y="10000">
+        <h4><span class="title-label">I. Introduction </span> A design story</h4>
+      </div>
+      <div class="step" data-x="0" data-y="15000">
+        <p>début des corporates identities </p>
+        <p>guildes en 1500, annuaire des guildes en 1600, invention de l'imprimerie dans ces eaux là</p>
+        <ul class="big-list">
+          <li class="big-item substep"><img class="big-item-icon" src="svg/religion.svg" width="50px"><span class="big-item-label">Religion </span></li>
+          <li class="big-item substep"><img class="big-item-icon" src="svg/etat.svg" width="50px"><span class="big-item-label">State</span></li>
         </ul>
       </div>
-      <div class="step" data-x="0" data-y="25000" data-scale="9">
+      <div class="step" data-x="0" data-y="20000"><img src="svg/dialog_size.svg"></div>
+      <div class="step" data-x="0" data-y="25000">
+        <ul class="big-list">
+          <li class="big-item substep"><img class="big-item-icon" src="svg/circle.svg" width="50px"><span class="big-item-label">Consistency   </span></li>
+          <li class="big-item substep"><img class="big-item-icon" src="svg/optimization.svg" width="50px"><span class="big-item-label">Optimization   </span></li>
+          <li class="big-item substep"><img class="big-item-icon" src="svg/organization.svg" width="50px"><span class="big-item-label">Organization</span></li>
+        </ul>
+      </div>
+      <div class="step" data-part="2" data-x="0" data-y="30000">
         <h4><span class="title-label"> II. Definition</span> What is a design system</h4>
       </div>
-      <div class="step" data-x="0" data-y="30000" data-scale="9">
+      <div class="step" data-x="0" data-y="35000">
         <h4>Design Sytem <span class="title-label">\di.zajn ˈsɪs.təm\</span></h4>
-        <p>UX and UI reference that all the actors are <i>using</i> for design and develop their products and digital services</p>
+        <p>
+          UX and UI reference that all the actors are using
+          for design and develop their products and digital services
+        </p>
       </div>
-      <div class="step" data-x="0" data-y="35000" data-scale="9">
-        <ul class="big-list">
-          <li class="big-item substep"><img class="big-item-icon" src="images/living.svg" width="50px"><span class="big-item-label">Living</span></li>
-          <li class="big-item substep"><img class="big-item-icon" src="images/agnostic.svg" width="50px"><span class="big-item-label">Agnostic</span></li>
-          <li class="big-item substep"><img class="big-item-icon" src="images/atomic.svg" width="50px"><span class="big-item-label">Atomic</span></li>
-          <li class="big-item substep"><img class="big-item-icon" src="images/universal.svg" width="50px"><span class="big-item-label">Universal</span></li>
-          <li class="big-item substep"><img class="big-item-icon" src="images/accessible.svg" width="50px"><span class="big-item-label">Accessible</span></li>
-        </ul>
-      </div>
-      <div class="step" data-x="0" data-y="45000" data-scale="12">
+      <div class="step" data-part="3" data-x="0" data-y="40000">
         <h4><span class="title-label">III. In production</span> The tool</h4>
       </div>
-      <div class="step" data-x="0" data-y="55000" data-scale="12">
+      <div class="step" data-x="0" data-y="45000">
         <ul class="big-list">
-          <li class="big-item substep"><img class="big-item-icon" src="images/bible.svg" width="50px"><span class="big-item-label">The truth     </span></li>
+          <li class="big-item substep"><img class="big-item-icon" src="svg/bible.svg" width="50px"><span class="big-item-label">The truth     </span></li>
         </ul>
         <ul class="big-list">
-          <li class="big-item substep"><img class="big-item-icon" src="images/visual.svg" width="50px"><span class="big-item-label">Visual    </span></li>
-          <li class="big-item substep"><img class="big-item-icon" src="images/usage3.svg" width="50px"><span class="big-item-label">Uses</span></li>
-          <li class="big-item substep"><img class="big-item-icon" src="images/layout.svg" width="50px"><span class="big-item-label">Layout    </span></li>
-          <li class="big-item substep"><img class="big-item-icon" src="images/voice.svg" width="50px"><span class="big-item-label">Voice & Tones</span></li>
-          <li class="big-item substep"><img class="big-item-icon" src="images/modular.svg" width="50px"><span class="big-item-label">Modules     </span></li>
-          <li class="big-item substep"><img class="big-item-icon" src="images/resources.svg" width="50px"><span class="big-item-label">Resources    </span></li>
+          <li class="big-item substep"><img class="big-item-icon" src="svg/visual.svg" width="50px"><span class="big-item-label">Visual    </span></li>
+          <li class="big-item substep"><img class="big-item-icon" src="svg/usage3.svg" width="50px"><span class="big-item-label">Uses</span></li>
+          <li class="big-item substep"><img class="big-item-icon" src="svg/layout.svg" width="50px"><span class="big-item-label">Layout    </span></li>
+          <li class="big-item substep"><img class="big-item-icon" src="svg/voice.svg" width="50px"><span class="big-item-label">Voice & Tones</span></li>
+          <li class="big-item substep"><img class="big-item-icon" src="svg/modular.svg" width="50px"><span class="big-item-label">Modules     </span></li>
+          <li class="big-item substep"><img class="big-item-icon" src="svg/resources.svg" width="50px"><span class="big-item-label">Resources    </span>
+            <p>
+              <genre>conseils d'utilisation pour le "CMS"</genre>
+            </p>
+          </li>
         </ul>
       </div>
-      <div class="step" data-x="0" data-y="65000" data-scale="12"><img class="big-item-icon" src="images/medium.gif" style="width:800px;"></div>
-      <div class="step" data-x="0" data-y="75000" data-scale="12"><img class="big-item-icon" src="images/usage.gif" style="width:800px;"></div>
-      <div class="step" data-x="0" data-y="85000" data-scale="12"><img class="big-item-icon" src="images/layout.gif" style="width:800px;"></div>
-      <div class="step" data-x="0" data-y="95000" data-scale="12"><img class="big-item-icon" src="images/voicesandtones2.gif" style="width:800px;"></div>
-      <div class="step" data-x="0" data-y="105000" data-scale="12"><img class="big-item-icon" src="images/modules.gif" style="width:800px;"></div>
-      <div class="step" data-x="0" data-y="115000" data-scale="12"><img class="big-item-icon" src="images/resources.gif" style="width:800px;"></div>
-      <div class="step" data-x="0" data-y="125000" data-scale="15">
+      <div class="step" data-x="0" data-y="50000"><span class="big-item-label">Visual</span><img class="big-item-icon" src="images/medium.gif" style="width:800px;"></div>
+      <div class="step" data-x="0" data-y="55000"><span class="big-item-label">Uses ( user story trainline )</span><img class="big-item-icon" src="images/usage.gif" style="width:800px;"></div>
+      <div class="step" data-x="0" data-y="60000"><span class="big-item-label">Layout</span><img class="big-item-icon" src="images/layout.gif" style="width:800px;"></div>
+      <div class="step" data-x="0" data-y="65000"><span class="big-item-label">Voice and tones</span><img class="big-item-icon" src="images/voicesandtones2.gif" style="width:800px;"></div>
+      <div class="step" data-x="0" data-y="70000"><span class="big-item-label">Modules</span><img class="big-item-icon" src="images/modules.gif" style="width:800px;"></div>
+      <div class="step" data-x="0" data-y="75000"><span class="big-item-label">Resources</span><img class="big-item-icon" src="images/resources.gif" style="width:800px;"></div>
+      <div class="step" data-part="4" data-x="0" data-y="80000">
+        <h4><span class="title-label">IV. Caracteristics</span> Essentials</h4>
+      </div>
+      <div class="step" data-x="0" data-y="85000">
+        <ul class="big-list">
+          <li class="big-item substep"><img class="big-item-icon" src="svg/living.svg" width="50px"><span class="big-item-label">Living</span></li>
+          <li class="big-item substep"><img class="big-item-icon" src="svg/agnostic.svg" width="50px"><span class="big-item-label">Agnostic</span></li>
+          <li class="big-item substep"><img class="big-item-icon" src="svg/atomic.svg" width="50px"><span class="big-item-label">Atomic</span></li>
+          <li class="big-item substep"><img class="big-item-icon" src="svg/universal.svg" width="50px"><span class="big-item-label">Universal</span></li>
+          <li class="big-item substep"><img class="big-item-icon" src="svg/accessible.svg" width="50px"><span class="big-item-label">Inclusive</span></li>
+        </ul>
+      </div>
+      <div class="step" data-x="0" data-y="90000">
+        <h4><span class="title-label">V. Flexible</span> A DSL that fit your needs</h4>
+      </div>
+      <div class="step" data-x="0" data-y="95000">
+        <h4><span class="title-label">V. Example</span> The "Perfect" workflow</h4>
+        <p>
+          montrer un workflow au plus optimal
+          lib sketch possibilités,
+          separer UX et graphism proprement,
+          versioning sur les planches,
+          commentaires à même la planche avec des issues resolvables et systeme qui prévient l'auteur de l'issue par email qu'elle à été résolue
+          
+        </p>
+      </div>
+      <div class="step" data-x="0" data-y="100000">
         <h4><span class="title-label">IV. Conclusion</span> Luxemburger Wort</h4>
       </div>
-      <div class="step" data-x="0" data-y="135000" data-scale="15">
+      <div class="step" data-x="0" data-y="105000">
         <ul class="big-list">
           <li class="big-item substep"><span class="big-item-number count-to-0-0">~50</span><span class="big-item-label">People directly involved</span></li>
           <li class="big-item substep"><span class="big-item-number count-to-0-1">4  </span><span class="big-item-label">Areas of expertise</span></li>
@@ -83,12 +117,22 @@
           <li class="big-item substep"><span class="big-item-number count-to-0-4">~1M</span><span class="big-item-label">Daily unique users</span></li>
         </ul>
       </div>
-      <div class="small step" data-x="0" data-y="145000" data-scale="18">
+      <div class="step" data-x="0" data-y="110000">
         <h4><span class="title-label">V. References and links</span> To go deeper</h4>
       </div>
-      <div class="small step final" data-x="0" data-y="160000" data-scale="18">
-        <h5 class="substep"><a href="#">http://designsystem.tfrere.fr/</a></h5>
+      <div class="step final" data-x="0" data-y="115000">
         <ul class="big-list text-left">
+          <li class="big-list-item substep" style="width:500px;margin-right: 40px;">
+            <div>
+              <h6>History</h6>
+            </div>
+            <ul>
+              <li><a href="http://www.historygraphicdesign.com/prologue-to-graphic-design/the-invention-of-writing">Invention of writing</a></li>
+              <li><a href="https://en.wikipedia.org/wiki/Style_guide">Style guide wikipedia</a></li>
+              <li><a href="https://en.wikipedia.org/wiki/Corporate_identity#Visual_identity_history">Corporate Identity Wikipedia</a></li>
+              <li><a href="https://en.wikipedia.org/wiki/The_Chicago_Manual_of_Style">Chicago manual of style</a></li>
+            </ul>
+          </li>
           <li class="big-list-item substep" style="width:500px;margin-right: 40px;">
             <div>
               <h6>Authors</h6>
@@ -126,36 +170,31 @@
               <li><a href="http://carbondesignsystem.com/">IBM</a></li>
               <li><a href="https://www.lightningdesignsystem.com/">Saleforce</a></li>
               <li><a href="http://www.audi.com/ci/en/guides/user-interface/introduction.html#">Audi</a></li>
-              <li><a href="https://polaris.shopify.com/">Shopify</a></li>
+              <li><a href="https://fluent.microsoft.com/">Microsoft</a></li>
             </ul>
           </li>
         </ul>
       </div>
-      <!--
-      <div id="ing" class="step" data-x="3500" data-y="-850" data-rotate="270" data-scale="6">
-      <p>by <b class="positioning">positioning</b>, <b class="rotating">rotating</b> and <b class="scaling">scaling</b> them on an infinite canvas</p>
+      <div class="step" data-x="0" data-y="120000">
+        <h1 class="big-title">Thanks !</h1>
+        <h5 class="substep"><a href="#">http://designsystem.tfrere.fr/</a></h5>
       </div>
-      <div id="imagination" class="step" data-x="6700" data-y="-300" data-scale="6">
-      <p>the only <b>limit</b> is your <b class="imagination">imagination</b></p>
-      </div>
-      <div id="source" class="step" data-x="6300" data-y="2000" data-rotate="20" data-scale="4">
-      <p>want to know more?</p>
-      <q><a href="http://github.com/bartaz/impress.js">use the source</a>, Luke!</q>
-      </div>
-      <div id="one-more-thing" class="step" data-x="6000" data-y="4000" data-scale="2">
-      <p>one more thing...</p>
-      </div>
-      -->
-      <script src="js/jquery.js"></script>
-      <script src="js/lodash.js"></script>
-      <script src="js/jquery.easing.js"></script>
-      <script src="js/jquery.countto.js"></script>
-      <script src="js/moment.js"></script>
-      <script src="js/impress.js"></script>
-      <script src="js/tweenlite.js"></script>
-      <script src="js/particles2D.js"></script>
-      <script src="js/confetti_cannon.js"></script>
-      <script src="js/main.js"></script>
+      <!-- data-x="3500" data-y="-850" data-rotate="270" data-scale="6"-->
+      <script src="js/lib/jquery.js"></script>
+      <script src="js/lib/lodash.js"></script>
+      <script src="js/lib/jquery.easing.js"></script>
+      <script src="js/lib/jquery.countto.js"></script>
+      <script src="js/lib/moment.js"></script>
+      <script src="js/lib/impress.js"></script>
+      <script src="js/lib/tweenlite.js"></script>
+      <script src="js/lib/TimelineMax.min.js"></script>
+      <script src="js/lib/TweenMax.min.js"></script>
+      <script src="js/lib/DrawSVGPlugin.min.js"></script>
+      <script src="js/lib/EaselPlugin.min.js"></script>
+      <script src="js/lib/particles2D.js"></script>
+      <script src="js/lib/confetti_cannon.js"></script>
+      <script src="js/toggleFullScreen.js"></script>
+      <script src="js/main-min.js"></script>
     </div>
   </body>
 </html>
